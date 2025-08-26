@@ -1,0 +1,12 @@
+
+RIB == Router + Interactor + View + Builder
+: 기능 분리, RIB 들이 트리구조로 화면 전환과 기능 흐름을 관리
+
+Interactor: 비즈니스 로직/상태의 주인. 생명주기(didBecomeActive, willResignActive)를 갖고, 사용자 입력을 처리하고 Presenter(View)로 출력 업데이트.
+Router: 화면의 Attatch / detach 담당, 네비게이션과 흐름 제어의 중심
+Builder: RIB의 생성자이자, 의존성 관리, 조립
+View: UI
+Dependency: 의존성
+Listener: 자식 -> 부모로 이벤트를 올리는 콜백 프로토콜
+
+
